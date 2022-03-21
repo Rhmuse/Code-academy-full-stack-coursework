@@ -1,0 +1,1 @@
+The prompt is a jpeg called "dasmotos-arts_redline.jpeg" located in the root.

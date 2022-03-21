@@ -1,3 +1,6 @@
+*{
+    font-family: Helvetica;
+}
 body{
     background-color: forestgreen;
 }
@@ -12,15 +15,6 @@ h1 {
     opacity: 90%;
     top: 40px;
     position: relative;
-    text-shadow: 0px 0px 5px red; 
-}
-#banner-cat{
-    max-height: 4000px;
-    max-width: 6000px;
-    width: 100%;
-    z-index: -10;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
+    text-shadow: 0px 0px 5px red;
+    background-image: url(./images/catintree.jpg);
 }
