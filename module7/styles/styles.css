@@ -1,0 +1,48 @@
+* {
+    font-family:'Trispace', Helvetica, sans-serif;
+
+}
+a {
+     color: black;
+ }
+
+nav {
+    background-color: rgba(227, 138, 119, .5);
+    background-image: url(https://i.imgur.com/navSYWh.jpeg);
+    background-position: 35% 18%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 150px;
+}
+ nav ul {
+     font-size: 30px;
+     position: relative; 
+     float: right;
+ }
+
+ body {
+    background-color: bisque;
+ }
+
+ main {
+    position: relative;
+    top: 150px;
+ }
+
+ h1 {
+     font-size: 35px;
+     font-family: Merriweather, Helvetica, sans-serif;
+ }
+
+ table {
+     border-style: solid;
+     border-width: 2px;
+     background-color: rgb(234, 169, 155);
+     border-collapse: collapse;
+ }
+
+ Table td {
+     border-style: solid;
+ }
