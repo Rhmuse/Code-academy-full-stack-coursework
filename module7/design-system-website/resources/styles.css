@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+h2 {
+    border: solid;
+    padding: 20px;
+    min-width: 400px;
+}
+
+h2#colors div{
+    display: inline-block;
+    position: relative;
+    height: 240px;
+    width: 190px;
+    padding: 170px 15px 10px;
+    text-align: end;
+    font-size: medium;
+    margin: 0px 15px 15px;  
+    border: gainsboro solid 1px;
+}
+
+h2 div p {
+    font-size: medium;
+}
+ .light{
+     color: #000000;
+ }
+
+ .dark{
+     color: white;
+ }
+
+/* Color swatches */
+
+#almond {
+    background-color: #EFDECD;
+}
+
+#bright-red {
+    background-color: #DB0000;
+}
+
+#alizerin-crimson {
+    background-color: #E32636;
+}
+
+#cadium-yellow-hue {
+    background-color: #FFEC00;
+}
+
+#dark-sienna{
+    background-color: #5F2E1F;
+}
+
+#indian-yellow{
+    background-color: #FFB800;
+}
+
+#midnight-black{
+    background-color: #000000;
+}
+
+#phthalo-blue{
+    background-color: #0C0040;
+}
+
+#phthalo-green{
+    background-color: #102E3C;
+}
+
+#prussian-blue{
+    background-color: #021E44;
+}
+
+#sap-green{
+    background-color: #0A3410;
+}
+
+#titanium-white{
+    background-color: #FFFFFF;
+}
+
+#van-dyke-brown{
+    background-color: #221B15;
+}
+
+#yellow-ochre{
+    background-color: #C79B00;
+}
+
+/* Fonts */
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+#lato {
+    font-family: Lato;
+}
+
+#roboto-mono {
+    font-family: 'roboto mono';
+}
+
+#merriweather {
+    font-family: merriweather;
+}
+
