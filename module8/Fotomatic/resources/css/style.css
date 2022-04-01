@@ -26,9 +26,10 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 450px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -41,6 +42,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 5;
 }
 
 header .content {
@@ -51,6 +53,7 @@ header .content {
 
 header .logo {
   flex: 1;
+  letter-spacing: 0.25rem;
 }
 
 header nav ul {
@@ -73,11 +76,37 @@ header .icon {
   padding-left: .75rem;
 }
 
+header .tablet {
+  display: none;
+}
+
 header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 760px) and (min-width: 451px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .tablet {
+    display: block;
+    width: 100%
+  }
+
+  header .mobile {
+    display: none;
+  }
+
+  header .tablet .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   header .desktop {
     display: none;
   }
@@ -114,9 +143,12 @@ header .mobile {
 
 #sign-up-section {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #sign-up-cta {
@@ -124,6 +156,8 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-left: 6.25rem;
+
 }
 
 #sign-up-cta .content {
@@ -174,6 +208,7 @@ header .mobile {
     height: auto;
     background-color: transparent;
     border: none;
+    margin-left: 0px;
   }
 
   #sign-up-cta .content {
@@ -221,12 +256,14 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  height: 33rem;
 }
 
-.feature .image-container {
+.feature .image-container  img{
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
 
 .feature h2 {
@@ -252,11 +289,19 @@ header .mobile {
 
   .feature h3 {
     font-size: .875rem;
-    line-height: 1.4;
+    line-height: 1.4;  
+  }
+
+  .feature {
+    height: auto;
   }
 }
 
 @media only screen and (max-width: 760px) {
+  
+}
+
+@media only screen and (max-width: 450px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -264,7 +309,7 @@ header .mobile {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1.25rem 1rem 1.8rem 1rem;
   }
 }
 
@@ -278,12 +323,18 @@ header .mobile {
 #filters-section .content {
   padding: 0 .625rem;
   margin-bottom: 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #filters-section .content h2 {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 #filters-section .content h3 {
@@ -291,11 +342,20 @@ header .mobile {
   line-height: 1.4;
   font-weight: 300;
   color: white;
+  width: 35%;
+  text-align: center;
 }
 
 #filters-section .images-container {
   max-width: 100%;
+  height: auto;
   padding: 0 1%;
+  display: flex;
+}
+
+#filters-section .images-container .image-container {
+  flex: 25%;
+  
 }
 
 @media only screen and (max-width: 760px) {
@@ -319,7 +379,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #filters-section .images-container {
+  #filters-section .image-container{
     padding: 0;
   }
 
@@ -328,23 +388,35 @@ header .mobile {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #filters-section .content h2,
+  #filters-section .content h3 {
+    width: 70%;
+  }
+}
+
 /* Quotes Section */
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding: 5rem;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+  display: block;
 }
 
 #quotes-section quote-citation {
@@ -352,8 +424,12 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
+  #quotes-section {
+    padding: 0rem 0rem;
+  }
+  
   #quotes-section content {
-    padding: 1.875rem .625rem;
+    padding: 0rem 0rem;
   }
 
   #quotes-section quote {
@@ -365,6 +441,17 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  #quotes-section .content {
+    flex-direction: column;
+  }
+  #quotes-section .quote {
+    padding-right: 0px;
+    margin-bottom: 1rem;
   }
 }
 
