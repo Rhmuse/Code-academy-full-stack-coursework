@@ -29,7 +29,7 @@ html {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 525px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -84,7 +84,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) and (min-width: 451px) {
+@media only screen and (max-width: 760px) and (min-width: 525px) {
   header .desktop {
     display: none;
   }
@@ -99,15 +99,32 @@ header .mobile {
   }
 
   header .tablet .button {
-    padding: .1875rem .5rem;
+    padding: 0;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
   }
+
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+  }
+
+  nav li {
+    align-items: center;
+    padding-left: 0.7rem;
+    font-size: 0.3rem;
+  }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 525px) {
   header .desktop {
+    display: none;
+  }
+
+  header .tablet{
     display: none;
   }
 
@@ -228,7 +245,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 525px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -301,7 +318,7 @@ header .mobile {
   
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 525px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -388,7 +405,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 525px) {
   #filters-section .content h2,
   #filters-section .content h3 {
     width: 70%;
@@ -445,7 +462,7 @@ header .mobile {
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 525px) {
   #quotes-section .content {
     flex-direction: column;
   }
