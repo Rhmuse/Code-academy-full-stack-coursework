@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+ background-color: #F8F3EC;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 20px;
+ font-family: "Nanum Myeongjo";
+}
+
+button {
+ cursor: pointer;
+}
+
+
+/* General Styling */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+
+/* Header */
+
+
+#header {
+    position: fixed;
+    height: 8rem;
+    width: 100%;
+    background-color: #DE0E0E;
+    z-index: 5;
+    justify-content: space-between;
+    font-weight: bolder;
+    flex-direction: row;
+    letter-spacing: 0.3rem;    
+}
+
+#logo {
+    padding-left: 1.5rem;
+    flex-direction: row;
+}
+
+#logo img {
+    height: 6rem;
+    width: auto;
+}
+
+#logo-name {
+    text-align: left;
+    padding-left: 0.2rem;
+    align-items: flex-start;
+}
+
+#contact {
+    padding-right: 1.5rem;
+    line-height: 2rem;
+    text-shadow: 0rem 0rem 1.7rem;
+}
+
+
+main {
+    position: relative;
+    top: 8rem;
+}
+
+/* Splash */
+
+#splash {
+    background-image: url(../pictures/GettyImages-1207748593-scaled.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 35rem;
+}
+
+#splash-text {
+    letter-spacing: 0.5rem;
+    line-height: 3.9rem;
+    font-size: 130%;
+    text-shadow: 0rem 0rem 1.7rem;
+}
+
+/* Testimonial */
+
+#testimonial-container {
+
+}
+
+.testimonial img {
+    height: 15rem;
+    width: 15rem;
+    justify-self: center;
+    margin: 0rem 2rem;
+}
+
+.testimonial h3 {
+    font-style: italic;
+    width: 65%;
+}
+
+#testimonial1 {
+    flex-direction: row;
+}
+
+#testimonial2 {
+    flex-direction: row-reverse;
+}
+
+/* Biography */
+
+#bio-container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bio img {
+    height: 17rem;
+    width: 17rem;
+}
+
+.bio h4 {
+    margin: 1rem 0rem;
+}
+
+.bio p {
+    width: 40%;
+    text-align: center;
+}
+
+/* Discalaimer and Footer */
+
+#address-and-disclaimer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    color: gold;
+    opacity: 0.9;
+}
+
+#address {
+    width: 20%;
+}
+
+#address p {
+    font-size: 60%;
+}
+
+#legal-disclaimer {
+    font-size: 50%;
+    width: 35%;
+    padding: .5rem;
+}
+
+footer {
+    background-color: black;
+    color: gold;
+    font-size: 55%;
+}
