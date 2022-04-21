@@ -38,7 +38,7 @@ const pAequorFactory = (n, a) => {
           sharedDna++;
         }
       };
-      let percentSharedDna = Math.round((sharedDna / (this.dna.length) ) * 100);
+      let percentSharedDna = Math.round((sharedDna / (this.dna.length - 1) ) * 100);
       console.log(`Specimen #1 and specimen #2 have ${percentSharedDna}% DNA in common.`);
     },
     willLikelySurvive() {
@@ -49,7 +49,6 @@ const pAequorFactory = (n, a) => {
       };
       const numberOfCAndG = getOccurrence(this.dna, 'C') + getOccurrence(this.dna, 'G');
       const cGOccurnece = Math.round(((numberOfCAndG) / (this.dna.length) ) * 100);
-      console.log(cGOccurnece);
       return cGOccurnece > 60;  
     }
   }
@@ -60,10 +59,10 @@ const makeViablePAequorArr = () => {
   let i = 1;
   const res = [];
   while (i < 31) {
-    let workingStrand = pAequorFactory(i, mockUpStrand);
+    let workingStrand = pAequorFactory(i, mockUpStrand());
     if (workingStrand.willLikelySurvive) {
       res.push(workingStrand);
-      i++
+      i++;
     }
   }
   return res;
@@ -71,7 +70,8 @@ const makeViablePAequorArr = () => {
 
 // Test Code
 viablePAequorArr = makeViablePAequorArr();
-console.log(viablePAequorArr.length === 30);
+
+console.log(viablePAequorArr[0].compareDNA(viablePAequorArr[1]));
 
 
 
